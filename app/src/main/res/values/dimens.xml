@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="text_size">17sp</dimen>
+    <dimen name="tr_height">1dp</dimen>
+    <dimen name="layout_margin_top">20dp</dimen>
+    <dimen name="list_margin_below">80dp</dimen>
+    <dimen name="tv_cnx_poll_size">45sp</dimen>
+    <dimen name="tv_cnx_poll_margin_bottom">40dp</dimen>
+    <dimen name="tv_splash_cnx">80sp</dimen>
+</resources>

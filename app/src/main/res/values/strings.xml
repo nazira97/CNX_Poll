@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CnxPoll</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_title">Login</string>
+
+    <string name="tv_select_nominee">Select a Nominee</string>
+    <string name="hint_search_nominee">Search Nominee</string>
+    <string name="btn_nominate">Nominate</string>
+    <string name="btn_elect">Elect</string>
+    <string name="tv_elect_candidate">Elect Candidate</string>
+    <string name="hint_elected_candidate">Elected Candidate Name</string>
+    <string name="tv_cnx_poll">CNX POLL</string>
+    <string name="btn_logout">Logout</string>
+    <string name="fcm_token">FCM Token: %s</string>
+</resources>

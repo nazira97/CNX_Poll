@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699273548245",
+    "firebase_url": "https://cnx-poll.firebaseio.com",
+    "project_id": "cnx-poll",
+    "storage_bucket": "cnx-poll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699273548245:android:90101e41393380c3",
+        "android_client_info": {
+          "package_name": "com.concentrix.cnxpoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699273548245-unooenulk5lu7t27jn9dqfb5rhgqvqq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.concentrix.cnxpoll",
+            "certificate_hash": "19b7b27dfa728e9b14a2d6b06a86abb881971878"
+          }
+        },
+        {
+          "client_id": "699273548245-d07iic54ihjvl4rfbouv6n1lg1vv28rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqilw2Z6-noXgKpSfzV3DA9N86tQ047eU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699273548245-d07iic54ihjvl4rfbouv6n1lg1vv28rs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "699273548245-usam9bjn3jo65g9ep7dpba6oifhut9fa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.concentrix.cnxpoll"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

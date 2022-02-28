@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_width="match_parent">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_elect_candidate"
+              android:text="@string/tv_elect_candidate"
+              android:textSize="@dimen/text_size"
+              android:textStyle="bold"
+              android:textColor="@color/colorBlack"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_elected_candidate"
+              android:textSize="@dimen/text_size"
+              android:layout_marginTop="@dimen/layout_margin"
+              android:layout_below="@id/tv_elect_candidate"
+              android:hint="@string/hint_elected_candidate"
+              android:textColor="@color/colorBlack"/>
+    <TableRow
+            android:id="@+id/row_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tr_height"
+            android:layout_below="@+id/tv_elected_candidate"
+            android:background="@color/colorGrey">
+    </TableRow>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/voting_list"
+            android:layout_marginBottom="@dimen/list_margin_below"
+            android:listSelector="@color/colorMistyRose"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_below="@+id/row_bar"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_voting"
+            style="@style/viewCustom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_shape"
+            android:text="@string/btn_elect"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+</RelativeLayout>

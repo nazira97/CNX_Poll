@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/login_parent_layout">
+
+    <data>
+
+        <variable
+                name="userLoginViewModel"
+                type="com.concentrix.cnxpoll.viewmodels.UserLoginViewModel" />
+    </data>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorpink"
+
+                    style="@style/custumViewLogin">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/tv_cnx_poll"
+                  android:textColor="@color/colorWhite"
+                  android:textSize="@dimen/tv_cnx_poll_size"
+                  android:fontFamily="@font/allan_bold"
+                  android:gravity="center_horizontal"
+                  android:layout_above="@+id/login_details_layout"
+                  android:layout_marginBottom="@dimen/tv_cnx_poll_margin_bottom"
+                  android:id="@+id/tv_cnx_poll" android:textAllCaps="false" android:textStyle="bold"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_margin="20dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/login_details_layout"
+                      android:gravity="center"
+                      android:background="@drawable/linear_layout_shape"
+                      android:layout_centerInParent="true">
+
+            <EditText android:id="@+id/et_email"
+                      style="@style/viewCustom"
+                      android:ems="10"
+                      android:hint="@string/email"
+                      android:afterTextChanged="@{(editable)-> userLoginViewModel.afterEmailTextChanged(editable)}"
+                      android:inputType="textEmailAddress" />
+
+            <EditText android:id="@+id/et_password"
+                      style="@style/viewCustom"
+                      android:ems="10"
+                      android:hint="@string/password"
+                      android:afterTextChanged="@{(editable)->userLoginViewModel.afterPasswordTextChanged(editable)}"
+                      android:inputType="textPassword" />
+
+            <Button android:id="@+id/btn_login"
+                    style="@style/viewCustom"
+                    android:text="@string/login_title"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_shape"
+                    android:onClick="@{()->userLoginViewModel.onLoginClick()}"
+                    android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

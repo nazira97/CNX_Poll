@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin"
+                android:layout_width="match_parent">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_select_nominee"
+              android:text="@string/tv_select_nominee"
+              android:textSize="@dimen/text_size"
+              android:textStyle="bold"
+              android:textColor="@color/colorBlack"/>
+
+    <EditText
+            android:id="@+id/search_bar"
+            android:hint="@string/hint_search_nominee"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="@dimen/layout_margin"
+            style="@style/et_textCustom"
+            android:layout_below="@id/tv_select_nominee"/>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nominee_list"
+            android:layout_marginBottom="@dimen/list_margin_below"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/colorMistyRose"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_below="@+id/search_bar"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_nominate"
+            style="@style/viewCustom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_shape"
+            android:text="@string/btn_nominate"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+</RelativeLayout>
